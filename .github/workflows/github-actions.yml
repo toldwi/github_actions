@@ -8,6 +8,8 @@ jobs:
     name: Exploring Github Actions
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Wartość payloadu to ${{ github.event.client_payload.mydata }}"
+    
       # Display the event that triggered the workflow
       - run: echo "The job was triggered by a ${{ github.event_name }} event."
       
