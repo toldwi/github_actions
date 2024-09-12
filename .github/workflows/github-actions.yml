@@ -1,5 +1,8 @@
 name: Nauka GitHub Actions
-on: push
+on: 
+   repository_dispatch:
+     types: [run_my_workflow]
+
 jobs:
   First-Job:
     name: Exploring Github Actions
